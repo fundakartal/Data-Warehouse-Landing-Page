@@ -684,8 +684,12 @@ img {
   text-align: center;
   line-height: 1.6;
   font-size: clamp(1rem, 2vw, 24px);
-  max-width: 80%;
   margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .Features-content {
+    max-width: 80%;
+  }
 }
 .Features-card {
   display: flex;
@@ -716,7 +720,12 @@ img {
   max-width: 250px;
   height: 100%;
   position: relative;
-  margin-left: 80px;
+  margin-left: 15px;
+}
+@media (min-width: 576px) {
+  .Features-card-item-content {
+    margin-left: 80px;
+  }
 }
 @media (min-width: 1200px) {
   .Features-card-item-content {

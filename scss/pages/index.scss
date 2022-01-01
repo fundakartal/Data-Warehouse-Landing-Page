@@ -100,8 +100,10 @@
     text-align: center;
     line-height: 1.6;
     font-size: clamp(1rem, 2vw, 24px);
-    max-width: 80%;
     margin-bottom: 30px;
+    @include mq('tablet') {
+      max-width: 80%;
+    }
   }
   &-card {
     display: flex;
@@ -127,7 +129,10 @@
         max-width: 250px;
         height: 100%;
         position: relative;
-        margin-left: 80px;
+        margin-left: 15px;
+        @include mq('small') {
+          margin-left: 80px;
+        }
         @include mq('large') {
           padding-top: 90px;
           margin-right: 50px;
