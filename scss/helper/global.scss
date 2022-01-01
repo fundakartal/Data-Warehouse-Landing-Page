@@ -1,0 +1,76 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $color-bg;
+}
+
+a {
+  color: inherit;
+}
+
+section:not(:last-child) {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include mq('large') {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq('large') {
+    max-width: $max-width;
+  }
+}
+
+.heading {
+  color: $color-primary;
+  font-size: clamp(25px, 3vw, 40px);
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.button {
+  display: grid;
+  place-content: center;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  height: 60px;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #fff;
+  cursor: pointer;
+  span {
+    margin-right: 20px;
+  }
+  &-icon {
+    display: grid;
+    justify-content: start;
+    font-weight: 700;
+  }
+  &-white {
+    background: #fff;
+    color: $color-primary;
+  }
+  &-transparent {
+    color: $color-primary;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    padding-left: 0;
+  }
+  &-purple {
+    background-color: #9c69e2;
+  }
+  &-pink {
+    background-color: #f063b8;
+  }
+}
